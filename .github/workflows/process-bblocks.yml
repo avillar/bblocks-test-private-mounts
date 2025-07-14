@@ -22,8 +22,8 @@ jobs:
       sparql_password: ${{ secrets.sparql_password }}
     with:
       before_postprocess: |
-        git clone https://github.com/avillar/ogcapi-sosa.git ${{ runner.temp }}/sosa
+        git clone https://github.com/avillar/ogcapi-sosa.git $RUNNER_TEMP/sosa
         cat << EOF > bblocks-config-local.yml
         url-mappings:
-          'https://opengeospatial.github.io/ogcapi-sosa/': '${{ runner.temp }}/sosa/'
+          'https://opengeospatial.github.io/ogcapi-sosa/': '$RUNNER_TEMP/sosa/'
         EOF
