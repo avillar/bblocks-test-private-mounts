@@ -22,10 +22,12 @@ jobs:
       sparql_password: ${{ secrets.sparql_password }}
     with:
       before_postprocess: |
-        git clone https://github.com/avillar/ogcapi-sosa.git $RUNNER_TEMP/sosa
+        LOCAL_REPOS_DIR=$RUNNER_TEMP/repos/
+        mkdir -p $LOCAL_REPOS_DIR
+        git clone --depth 1 https://github.com/avillar/ogcapi-sosa.git $LOCAL_REPOS_DIR/sosa
         cat << EOF > bblocks-config-local.yml
         url-mappings:
-          'https://opengeospatial.github.io/ogcapi-sosa/': '$RUNNER_TEMP/sosa/'
+          'https://opengeospatial.github.io/ogcapi-sosa/': '$LOCAL_REPOS_DIR/sosa/'
         EOF
         cat bblocks-config-local.yml
-
+        find $LOCAL_REPOS_DIR
