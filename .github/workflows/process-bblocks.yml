@@ -27,3 +27,5 @@ jobs:
         url-mappings:
           'https://opengeospatial.github.io/ogcapi-sosa/': '$RUNNER_TEMP/sosa/'
         EOF
+        cat bblocks-config-local.yml
+
