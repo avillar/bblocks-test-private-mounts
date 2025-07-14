@@ -1,5 +1,5 @@
 # A short, descriptive name of this building block collection
-name: My OGC Building Blocks repository
+name: Mount tests
 
 # Short abstract for this collection (optional)
 abstract: |
@@ -12,7 +12,7 @@ description: |
   including [links](https://google.es).
 
 # Customize the following prefix (will be prepended to the path of the building blocks):
-identifier-prefix: ogc.bbr.template.
+identifier-prefix: ogc.avillar.tests.mounts.
 
 # List of imports ("default" is an alias for the main OGC Building Blocks Register)
 imports:

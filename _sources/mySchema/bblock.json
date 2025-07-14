@@ -1,5 +1,4 @@
 {
-  "$schema": "metaschema.yaml",
   "name": "My Schema",
   "abstract": "An example schema defining the set of properties of any type of object.",
   "status": "under-development",
