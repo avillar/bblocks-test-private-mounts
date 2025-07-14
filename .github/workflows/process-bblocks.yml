@@ -22,7 +22,7 @@ jobs:
       sparql_password: ${{ secrets.sparql_password }}
     with:
       before_postprocess: |
-        LOCAL_REPOS_DIR=$RUNNER_TEMP/repos/
+        LOCAL_REPOS_DIR=$RUNNER_TEMP/repos
         mkdir -p $LOCAL_REPOS_DIR
         git clone --depth 1 https://github.com/avillar/ogcapi-sosa.git $LOCAL_REPOS_DIR/sosa
         cat << EOF > bblocks-config-local.yml
