@@ -17,6 +17,7 @@ identifier-prefix: ogc.avillar.tests.mounts.
 # List of imports ("default" is an alias for the main OGC Building Blocks Register)
 imports:
   - default
+  - https://opengeospatial.github.io/ogcapi-sosa/build/register.json
 
 # Whether to enable the (highly experimental) downcompiling of JSON schemas to an OpenAPI 3.0-compatible
 # version

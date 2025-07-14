@@ -3,5 +3,5 @@ description: My example schema
 type: object
 properties:
   avillar:
-    - $ref: bblocks://ogc.sosa.properties.avillar
+    $ref: bblocks://ogc.sosa.properties.avillar
 
