@@ -1,0 +1,5 @@
+@prefix ns1: <https://example.com/> .
+@prefix ns2: <https://example.net/> .
+
+[] ns2:avillar [ ns1:fake "test" ] .
+

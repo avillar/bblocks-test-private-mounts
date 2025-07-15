@@ -1,0 +1,197 @@
+{
+  "@context": [
+    {
+      "@base": "https://avillar.github.io/bblocks-test-private-mounts"
+    },
+    {
+      "bblocks": "https://www.opengis.net/def/bblocks/",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "dct": "http://purl.org/dc/terms/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "prof": "http://www.w3.org/ns/dx/prof/",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "modspec": "http://www.opengis.net/def/ont/modspec/",
+      "itemIdentifier": "@id",
+      "baseURL": "@id",
+      "name": "rdfs:label",
+      "abstract": {
+        "@id": "dct:abstract",
+        "@type": "https://www.w3.org/ns/iana/media-types/text/markdown"
+      },
+      "description": {
+        "@id": "dct:description",
+        "@type": "https://www.w3.org/ns/iana/media-types/text/markdown"
+      },
+      "status": {
+        "@id": "bblocks:status",
+        "@type": "@id",
+        "@context": {
+          "@base": "http://www.opengis.net/def/status/"
+        }
+      },
+      "dateTimeAddition": {
+        "@id": "dct:created",
+        "@type": "xsd:dateTime"
+      },
+      "version": "dct:hasVersion",
+      "dateOfLastChange": {
+        "@id": "dct:modified",
+        "@type": "xsd:date"
+      },
+      "scope": {
+        "@id": "bblocks:scope",
+        "@type": "@id",
+        "@context": {
+          "@base": "http://www.opengis.net/def/bblocks/scope/"
+        }
+      },
+      "sources": {
+        "@id": "dct:source",
+        "@context": {
+          "title": "rdfs:label",
+          "link": "@id"
+        }
+      },
+      "schema": {
+        "@id": "bblocks:hasSchema",
+        "@type": "@id",
+        "@container": "@index",
+        "@index": "dct:format"
+      },
+      "ldContext": {
+        "@id": "bblocks:hasJsonLdContext",
+        "@type": "@id"
+      },
+      "sourceLdContext": {
+        "@id": "bblocks:hasSourceJsonLdContext",
+        "@type": "@id"
+      },
+      "documentation": {
+        "@id": "dct:description",
+        "@type": "@id",
+        "@container": "@index",
+        "@index": "dct:identifier",
+        "@context": {
+          "mediatype": "dct:format",
+          "url": "rdfs:isDefinedBy"
+        }
+      },
+      "hasConcepts": {
+        "@reverse": "skos:inScheme"
+      },
+      "dependsOn": {
+        "@id": "bblocks:dependsOn",
+        "@type": "@id"
+      },
+      "profileOf": {
+        "@id": "prof:isProfileOf",
+        "@type": "@id"
+      },
+      "tags": "dcat:keyword",
+      "shaclRules": {
+        "@id": "bblocks:hasShaclRule",
+        "@type": "@id",
+        "@container": "@index",
+        "@index": "rdfs:seeAlso"
+      },
+      "validationReport": {
+        "@id": "bblocks:hasValidationReport",
+        "@type": "@id"
+      },
+      "imports": {
+        "@id": "bblocks:imports",
+        "@type": "@id"
+      },
+      "conformanceClasses": {
+        "@id": "modspec:class",
+        "@type": "@id"
+      }
+    }
+  ],
+  "name": "Building Blocks - Mount tests",
+  "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
+  "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
+  "modified": "2025-07-15T07:40:07.142291",
+  "tooling": {
+    "bblocks-postprocess": {
+      "commitId": "\"498c58d12ea11fa8de140b49a4dde0639efc1241",
+      "shortCommitId": "\"498c58",
+      "date": "2025-07-15T07:05:54+00:00\""
+    }
+  },
+  "gitRepository": "https://github.com/avillar/bblocks-test-private-mounts",
+  "gitHubRepository": "https://github.com/avillar/bblocks-test-private-mounts/blob/master/",
+  "baseURL": "https://avillar.github.io/bblocks-test-private-mounts/",
+  "viewerURL": "https://avillar.github.io/bblocks-test-private-mounts/",
+  "validationReport": "https://avillar.github.io/bblocks-test-private-mounts/build/tests/report.html",
+  "imports": [
+    "https://opengeospatial.github.io/bblocks/register.json",
+    "https://opengeospatial.github.io/ogcapi-sosa/build/register.json"
+  ],
+  "remoteCacheDir": "https://avillar.github.io/bblocks-test-private-mounts/build/annotated/_cache",
+  "@type": [
+    "skos:ConceptScheme",
+    "dcat:Catalog"
+  ],
+  "skos:prefLabel": "Building Blocks - Mount tests",
+  "hasConcepts": [
+    {
+      "itemIdentifier": "ogc.avillar.tests.mounts.mySchema",
+      "name": "My Schema",
+      "abstract": "An example schema defining the set of properties of any type of object.",
+      "status": "under-development",
+      "dateTimeAddition": "2023-04-05T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-register",
+      "version": "0.1",
+      "dateOfLastChange": "2025-07-14",
+      "link": "https://github.com/opengeospatial/bblock-template",
+      "sources": [
+        {
+          "title": "Sample source document",
+          "link": "https://example.com/sources/1"
+        }
+      ],
+      "maturity": "mature",
+      "scope": "unstable",
+      "tags": [
+        "templates"
+      ],
+      "shaclRules": {},
+      "dependsOn": [
+        "ogc.sosa.properties.avillar"
+      ],
+      "ldContext": "https://avillar.github.io/bblocks-test-private-mounts/build/annotated/avillar/tests/mounts/mySchema/context.jsonld",
+      "schema": {
+        "application/yaml": "https://avillar.github.io/bblocks-test-private-mounts/build/annotated/avillar/tests/mounts/mySchema/schema.yaml",
+        "application/json": "https://avillar.github.io/bblocks-test-private-mounts/build/annotated/avillar/tests/mounts/mySchema/schema.json"
+      },
+      "sourceSchema": "https://avillar.github.io/bblocks-test-private-mounts/_sources/mySchema/schema.yaml",
+      "sourceLdContext": "https://avillar.github.io/bblocks-test-private-mounts/_sources/mySchema/context.jsonld",
+      "sourceFiles": "https://avillar.github.io/bblocks-test-private-mounts/_sources/mySchema/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/avillar/bblocks-test-private-mounts/blob/master/build/tests/avillar/tests/mounts/mySchema/",
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://avillar.github.io/bblocks-test-private-mounts/build/generateddocs/json-full/avillar/tests/mounts/mySchema/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://avillar.github.io/bblocks-test-private-mounts/build/generateddocs/markdown/avillar/tests/mounts/mySchema/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://avillar.github.io/bblocks-test-private-mounts/bblock/ogc.avillar.tests.mounts.mySchema"
+        }
+      },
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset"
+      ]
+    }
+  ]
+}

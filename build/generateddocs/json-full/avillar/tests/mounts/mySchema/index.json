@@ -1,0 +1,65 @@
+
+
+{
+  "itemIdentifier": "ogc.avillar.tests.mounts.mySchema",
+  "name": "My Schema",
+  "abstract": "An example schema defining the set of properties of any type of object.",
+  "status": "under-development",
+  "dateTimeAddition": "2023-04-05T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-register",
+  "version": "0.1",
+  "dateOfLastChange": "2025-07-14",
+  "link": "https://github.com/opengeospatial/bblock-template",
+  "sources": [
+    {
+      "title": "Sample source document",
+      "link": "https://example.com/sources/1"
+    }
+  ],
+  "maturity": "mature",
+  "scope": "unstable",
+  "tags": [
+    "templates"
+  ],
+  "shaclRules": {},
+  "dependsOn": [
+    "ogc.sosa.properties.avillar"
+  ],
+  "ldContext": "https://avillar.github.io/bblocks-test-private-mounts/build/annotated/avillar/tests/mounts/mySchema/context.jsonld",
+  "schema": {
+    "application/yaml": "https://avillar.github.io/bblocks-test-private-mounts/build/annotated/avillar/tests/mounts/mySchema/schema.yaml",
+    "application/json": "https://avillar.github.io/bblocks-test-private-mounts/build/annotated/avillar/tests/mounts/mySchema/schema.json"
+  },
+  "sourceSchema": "https://avillar.github.io/bblocks-test-private-mounts/_sources/mySchema/schema.yaml",
+  "sourceLdContext": "https://avillar.github.io/bblocks-test-private-mounts/_sources/mySchema/context.jsonld",
+  "sourceFiles": "https://avillar.github.io/bblocks-test-private-mounts/_sources/mySchema/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/avillar/bblocks-test-private-mounts/blob/master/build/tests/avillar/tests/mounts/mySchema/",
+  "examples": [
+    {
+      "title": "Example 1",
+      "snippets": [
+        {
+          "language": "json",
+          "code": "{\n  \"avillar\": {\n    \"fake\": \"test\"\n  }\n}",
+          "url": "https://avillar.github.io/bblocks-test-private-mounts/build/tests/avillar/tests/mounts/mySchema/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://avillar.github.io/bblocks-test-private-mounts/build/annotated/avillar/tests/mounts/mySchema/context.jsonld\",\n  \"avillar\": {\n    \"fake\": \"test\"\n  }\n}",
+          "url": "https://avillar.github.io/bblocks-test-private-mounts/build/tests/avillar/tests/mounts/mySchema/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix ns1: <https://example.com/> .\n@prefix ns2: <https://example.net/> .\n\n[] ns2:avillar [ ns1:fake \"test\" ] .\n\n",
+          "url": "https://avillar.github.io/bblocks-test-private-mounts/build/tests/avillar/tests/mounts/mySchema/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: My example schema\ntype: object\nproperties:\n  avillar:\n    $ref: https://avillar.github.io/ogcapi-sosa/build/annotated/sosa/properties/avillar/schema.yaml\n    x-jsonld-id: https://example.net/avillar\n",
+  "gitRepository": "https://github.com/avillar/bblocks-test-private-mounts",
+  "gitPath": "_sources/mySchema"
+}

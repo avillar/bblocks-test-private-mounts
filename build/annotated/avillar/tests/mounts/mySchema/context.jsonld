@@ -1,0 +1,11 @@
+{
+  "@context": {
+    "avillar": {
+      "@context": {
+        "fake": "https://example.com/fake"
+      },
+      "@id": "https://example.net/avillar"
+    },
+    "@version": 1.1
+  }
+}

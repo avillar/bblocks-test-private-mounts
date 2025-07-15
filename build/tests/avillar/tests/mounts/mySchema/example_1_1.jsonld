@@ -1,0 +1,6 @@
+{
+  "@context": "https://avillar.github.io/bblocks-test-private-mounts/build/annotated/avillar/tests/mounts/mySchema/context.jsonld",
+  "avillar": {
+    "fake": "test"
+  }
+}

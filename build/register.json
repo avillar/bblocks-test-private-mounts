@@ -1,0 +1,77 @@
+{
+  "name": "Mount tests",
+  "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
+  "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
+  "modified": "2025-07-15T07:40:07.142291",
+  "tooling": {
+    "bblocks-postprocess": {
+      "commitId": "\"498c58d12ea11fa8de140b49a4dde0639efc1241",
+      "shortCommitId": "\"498c58",
+      "date": "2025-07-15T07:05:54+00:00\""
+    }
+  },
+  "gitRepository": "https://github.com/avillar/bblocks-test-private-mounts",
+  "gitHubRepository": "https://github.com/avillar/bblocks-test-private-mounts/blob/master/",
+  "baseURL": "https://avillar.github.io/bblocks-test-private-mounts/",
+  "viewerURL": "https://avillar.github.io/bblocks-test-private-mounts/",
+  "validationReport": "https://avillar.github.io/bblocks-test-private-mounts/build/tests/report.html",
+  "imports": [
+    "https://opengeospatial.github.io/bblocks/register.json",
+    "https://opengeospatial.github.io/ogcapi-sosa/build/register.json"
+  ],
+  "bblocks": [
+    {
+      "itemIdentifier": "ogc.avillar.tests.mounts.mySchema",
+      "name": "My Schema",
+      "abstract": "An example schema defining the set of properties of any type of object.",
+      "status": "under-development",
+      "dateTimeAddition": "2023-04-05T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-register",
+      "version": "0.1",
+      "dateOfLastChange": "2025-07-14",
+      "link": "https://github.com/opengeospatial/bblock-template",
+      "sources": [
+        {
+          "title": "Sample source document",
+          "link": "https://example.com/sources/1"
+        }
+      ],
+      "maturity": "mature",
+      "scope": "unstable",
+      "tags": [
+        "templates"
+      ],
+      "shaclRules": {},
+      "dependsOn": [
+        "ogc.sosa.properties.avillar"
+      ],
+      "ldContext": "https://avillar.github.io/bblocks-test-private-mounts/build/annotated/avillar/tests/mounts/mySchema/context.jsonld",
+      "schema": {
+        "application/yaml": "https://avillar.github.io/bblocks-test-private-mounts/build/annotated/avillar/tests/mounts/mySchema/schema.yaml",
+        "application/json": "https://avillar.github.io/bblocks-test-private-mounts/build/annotated/avillar/tests/mounts/mySchema/schema.json"
+      },
+      "sourceSchema": "https://avillar.github.io/bblocks-test-private-mounts/_sources/mySchema/schema.yaml",
+      "sourceLdContext": "https://avillar.github.io/bblocks-test-private-mounts/_sources/mySchema/context.jsonld",
+      "sourceFiles": "https://avillar.github.io/bblocks-test-private-mounts/_sources/mySchema/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/avillar/bblocks-test-private-mounts/blob/master/build/tests/avillar/tests/mounts/mySchema/",
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://avillar.github.io/bblocks-test-private-mounts/build/generateddocs/json-full/avillar/tests/mounts/mySchema/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://avillar.github.io/bblocks-test-private-mounts/build/generateddocs/markdown/avillar/tests/mounts/mySchema/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://avillar.github.io/bblocks-test-private-mounts/bblock/ogc.avillar.tests.mounts.mySchema"
+        }
+      }
+    }
+  ],
+  "remoteCacheDir": "https://avillar.github.io/bblocks-test-private-mounts/build/annotated/_cache"
+}

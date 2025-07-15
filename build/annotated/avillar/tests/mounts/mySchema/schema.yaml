@@ -1,0 +1,7 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: My example schema
+type: object
+properties:
+  avillar:
+    $ref: https://avillar.github.io/ogcapi-sosa/build/annotated/sosa/properties/avillar/schema.yaml
+    x-jsonld-id: https://example.net/avillar
