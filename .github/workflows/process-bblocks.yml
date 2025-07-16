@@ -20,3 +20,4 @@ jobs:
     secrets:
       sparql_username: ${{ secrets.sparql_username }}
       sparql_password: ${{ secrets.sparql_password }}
+      gh_pat: ${{ secrets.gh_pat }}
