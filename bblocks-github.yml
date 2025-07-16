@@ -1,2 +1,3 @@
 repository-mappings:
   'https://opengeospatial.github.io/ogcapi-sosa/': 'avillar/ogcapi-sosa'
+  'https://avillar.github.io/ogcapi-sosa/': 'avillar/ogcapi-sosa'
