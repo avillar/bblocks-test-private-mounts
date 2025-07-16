@@ -20,7 +20,7 @@
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://avillar.github.io/bblocks-test-private-mounts/build/generateddocs/markdown/avillar/tests/mounts/mySchema/index.md" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-07-14"^^xsd:date ;
+    dct:modified "2025-07-16"^^xsd:date ;
     dct:source <https://example.com/sources/1> ;
     skos:inScheme <https://avillar.github.io/bblocks-test-private-mounts/> ;
     dcat:keyword "templates" ;
@@ -49,11 +49,11 @@ including [links](https://google.es).
 <https://example.com/sources/1> rdfs:label "Sample source document" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2025-07-15T07:40:07.881907"^^xsd:dateTime ;
-    prov:startedAtTime "2025-07-15T07:40:07.818274"^^xsd:dateTime ;
+    prov:endedAtTime "2025-07-16T11:05:53.221377"^^xsd:dateTime ;
+    prov:startedAtTime "2025-07-16T11:05:53.158083"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:a56e4c686d4aafd9cfc910c973a3fcbe2b429d27" ;
+            dct:hasVersion "git:c2ee3af4155f5b8f8c8e63485b765f977b2f49da" ;
             rdfs:seeAlso <https://avillar.github.io/bblocks-test-private-mounts/build/register.json> ],
         [ a prov:Entity ;
             dct:format "application/yaml" ;

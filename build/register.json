@@ -2,12 +2,12 @@
   "name": "Mount tests",
   "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
   "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
-  "modified": "2025-07-15T07:40:07.142291",
+  "modified": "2025-07-16T11:05:52.740231",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"498c58d12ea11fa8de140b49a4dde0639efc1241",
-      "shortCommitId": "\"498c58",
-      "date": "2025-07-15T07:05:54+00:00\""
+      "commitId": "\"4eb4e1016f5689afa294753aafee1d1db04dead5",
+      "shortCommitId": "\"4eb4e1",
+      "date": "2025-07-16T11:02:44+00:00\""
     }
   },
   "gitRepository": "https://github.com/avillar/bblocks-test-private-mounts",
@@ -29,7 +29,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2025-07-14",
+      "dateOfLastChange": "2025-07-16",
       "link": "https://github.com/opengeospatial/bblock-template",
       "sources": [
         {
